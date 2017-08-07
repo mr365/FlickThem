@@ -1,0 +1,23 @@
+.heading__wrapper {
+	text-align: center;
+	margin: 10px auto;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.thumbnail__wrapper {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+a {
+
+}
+a.thumbnail img {
+	width: 100%;
+}
+.pager__wrapper {
+	margin-left: 20px;
+	margin-right: 20px;
+}
