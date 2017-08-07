@@ -19,7 +19,7 @@ myApp.controller('homeCtrl', ['$scope','PopularPhotos',function($scope,PopularPh
 }])
 .directive('homeDir',function(){
   return {
-    templateUrl: '/src/directives/home/home.tpl.html',
+    templateUrl: 'https://mr365.github.io/FlickThem/src/directives/home/home.tpl.html',
     controller: 'homeCtrl',
     link: function(scope,elem,attr){
       $('#myModal').on('show.bs.modal', function (e) {
