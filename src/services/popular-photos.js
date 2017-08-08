@@ -6,31 +6,16 @@ myApp.factory('PopularPhotos',['$http','$q',function($http,$q){
 		key : 'd053de4ef8f6d1c9955410c0fa67e234',
 		secret : '82f96cade648c7cb'
 	};
-	
-	var flickrAPIforPropleGetPhotos = 'https://api.flickr.com/services/rest?'+
-    '&api_key='+ 'd053de4ef8f6d1c9955410c0fa67e234' +
-		'&format='+'json'+
-		'&jsoncallback=JSON_CALLBACK'+
-		'&method=' + 'flickr.people.getPhotos' +
-		'&user_id=' + '113231763@N07'+
-		'&extras=' + 'description,owner_name'+
-		'&per_page=' + '48'+
-		'&page='     + '4'; //'&tags=' + 'kittens,cats,instacats,france,nature,coffee,tea'+
-	
-	var flickrTagGetHotList = 'https://api.flickr.com/services/rest?'+
-		'&api_key='+ 'd053de4ef8f6d1c9955410c0fa67e234' +
-		'&format='+'json'+
-		'&jsoncallback=JSON_CALLBACK'+
-		'&method=' + 'flickr.tags.getHotList' +
-		'&count=40';
+		
+	//Angular 1.6.x uses a $sce serive for whitelisting a URL
 	//var trusted_url = $sce.trustAsResourceUrl(flickrAPIforPropleGetPhotosOf);	
   
-	popularPhotos.getPopularPhotos = function(){
+	popularPhotos.getPopularPhotos = function(flickrAPIforPropleGetPhotos){
 		return $http.jsonp(flickrAPIforPropleGetPhotos).success(function(res){
 			popularPhotos.per_page = res.photos.perpage;
 			return popularPhotos.imageData = res;
 		}).error(function() {
-        $log.debug('fetch error');
+        console.log('fetch error');
       })
       .finally(function() {
         defer.resolve();
