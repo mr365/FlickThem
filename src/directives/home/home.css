@@ -48,17 +48,10 @@ ul.pagination.pagination-lg.pagination__custom {
 	border-radius: 0;
 }
 
-/*@media screen and (max-width:599px) {
-	.pagination.pagination-lg.pagination__custom li>a {
-		font-size: 12px;
-		line-height: 1;
-		padding: 10px 10px;
-	}
-}*/
-
 .modal-dialog {
-	margin: 10vh auto;
+	margin: 5vh auto;
 	padding: 0;
+	width: 90%;
 }
 
 .modal-content {
@@ -96,3 +89,51 @@ button.close.btn-secondary {
 	border-radius: 0;
 }
 
+/*---------- other popularly used screens -------*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 740px)
+  and (orientation: portrait)  {
+	.modal-dialog {
+		margin: 30vh auto;
+		padding: 0;
+	}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 740px)
+  and (orientation: landscape)  {
+	.modal-dialog {
+		margin: 5vh auto;
+		padding: 0;
+	}
+}
+
+/* ----------- iPhone 6 for min,6+ for max ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.modal-dialog {
+		margin: 30vh auto;
+		padding: 0;
+	}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+	.modal-dialog {
+		margin: 5vh auto;
+		padding: 0;
+	}
+}

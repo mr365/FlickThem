@@ -5,7 +5,7 @@ myApp.config(function($stateProvider,$urlRouterProvider){
 	var home = {
 			name : 'home',
 			url  : '/',
-			templateUrl : 'https://mr365.github.io/FlickThem/src/views/home.html'
+			templateUrl : '/src/views/home.html'
 	};
 
 	$stateProvider.state(home);
