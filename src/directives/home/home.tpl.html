@@ -19,7 +19,9 @@
 	</div>
 </div>
 <div class="row pager__wrapper">
+
     <ul uib-pagination class="pagination pagination-lg pagination__custom" max-size="5" items-per-page="itemsPerPage" total-items="totalItems" ng-model="gallery.currentPage"></ul>
+
 </div>
 <div class="row">
 	<div ng-repeat='image in thumbnails.slice(((gallery.currentPage-1)*itemsPerPage), ((gallery.currentPage)*itemsPerPage))'>
@@ -34,7 +36,9 @@
 </div>
 
 <div class="row pager__wrapper">
+
     <pre>You are currently on page {{gallery.currentPage}} </pre>
     <ul uib-pagination class="pagination pagination-lg pagination__custom" max-size="5" items-per-page="itemsPerPage" total-items="totalItems" ng-model="gallery.currentPage"></ul>
+
 </div>
 
