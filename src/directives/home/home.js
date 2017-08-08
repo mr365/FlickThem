@@ -28,15 +28,13 @@ myApp.controller('homeCtrl', ['$scope','PopularPhotos',function($scope,PopularPh
         });
       },$scope.thumbnails);
       $scope.totalItems = data.data.photos.total;
-      console.log();
     });
   };
 
+  //get json data for building img src
   for(i=1;i<6;i++) {
     $scope.getPhotos(i); 
   }
-  console.log($scope.callerlist);
-  //get json data for building img src
 
 }])
 .directive('homeDir',function(){
@@ -58,22 +56,18 @@ myApp.controller('homeCtrl', ['$scope','PopularPhotos',function($scope,PopularPh
           for(var j=cp+1; j<cp+5; j++){
             temp.push(j);
           }
-          console.log('temp',temp);
-          //scope.tempSwap = _.difference(temp,scope.totalList);
-          //scope.uniquePages = scope.tempSwap.length > 0 ? scope.tempSwap : temp;
-          //console.log('scope.uniquePages', scope.uniquePages);
+
           var newPages = _.difference(temp, scope.totalList);
           newPages = _.isEqualWith(temp,scope.totalList) ? temp : newPages;
-          console.log('newPages', newPages);
+
           if(newPages.length>0){
             _.each(newPages,function(key){
-              console.log(key);
               scope.getPhotos(key);
             });
           }
           scope.totalList = _.concat(scope.totalList,temp);
           scope.totalList = _.uniq(scope.totalList);
-          console.log('scope.totalList:', scope.totalList);
+
         }
       });
       
