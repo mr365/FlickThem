@@ -57,15 +57,13 @@ ul.pagination.pagination-lg.pagination__custom {
 }*/
 
 .modal-dialog {
-	width: 90%;
-	height: 80%;
-	margin: 10% auto;
+	margin: 10vh auto;
 	padding: 0;
 }
 
 .modal-content {
 	height: auto;
-	min-height: 100%;
+	width: 100%;
 	border-radius: 0;
 }
 
