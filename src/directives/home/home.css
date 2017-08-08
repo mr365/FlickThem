@@ -28,23 +28,30 @@ ul.pagination.pagination-lg.pagination__custom {
 	background-color: #000000;
 	color: white;
 }
+
+.pagination.pagination-lg.pagination__custom li.disabled a {
+	color: #777;
+}
+
 .pagination.pagination-lg.pagination__custom li>a {
 	color: black;
 	margin: 0 3px;
 }
+
 .pagination.pagination-lg.pagination__custom li:not(.disabled) a:hover {
 	color: white;
 	background-color: #000000;
 	border: 1px solid #000000;
 }
+
 .pagination-lg>li:first-child>a, .pagination-lg>li:last-child>a  {
 	border-radius: 0;
 }
 
-@media screen and (max-width:599px) {
+/*@media screen and (max-width:599px) {
 	.pagination.pagination-lg.pagination__custom li>a {
 		font-size: 12px;
 		line-height: 1;
 		padding: 10px 10px;
 	}
-}
+}*/
