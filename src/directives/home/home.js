@@ -79,7 +79,7 @@ myApp.controller('homeCtrl', ['$scope','PopularPhotos',function($scope,PopularPh
         var new_title = $(that).data('val').title;
         var foot_note = $(that).data('val').owner;
         new_src = new_src+'b.jpg';
-        current_modal.find('.modal-body').html('<img class="img-thumbnail" src="'+ new_src +'" alt="flickr thumnails">');
+        current_modal.find('.modal-body').html('<span class="helper"></span><img class="img-thumbnail" src="'+ new_src +'" alt="flickr thumnails">');
         current_modal.find('#myModalLabel').text(new_title);
         current_modal.find('.modal-footer').text('A photo by:'+foot_note);
       });

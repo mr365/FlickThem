@@ -55,3 +55,46 @@ ul.pagination.pagination-lg.pagination__custom {
 		padding: 10px 10px;
 	}
 }*/
+
+.modal-dialog {
+	width: 90%;
+	height: 80%;
+	margin: 10% auto;
+	padding: 0;
+}
+
+.modal-content {
+	height: auto;
+	min-height: 100%;
+	border-radius: 0;
+}
+
+.modal-body {
+	white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+	text-align: center;
+	/*margin: 1em 0;*/
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.modal-body img {
+	vertical-align: middle;
+}
+
+button.close.btn-secondary {
+	background-color: #000000;
+	border-color: #000000; 
+	color: #fff;
+	border: 1px solid #000000;
+	opacity: 1;
+	text-shadow: none;
+	padding: 6px 12px;
+	font-weight: normal;
+	font-size: 16px; 
+	border-radius: 0;
+}
+
