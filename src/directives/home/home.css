@@ -28,6 +28,11 @@ ul.pagination.pagination-lg.pagination__custom {
 	background-color: #000000;
 	color: white;
 }
+
+.pagination.pagination-lg.pagination__custom li.disabled a {
+	color: #777;
+}
+
 .pagination.pagination-lg.pagination__custom li>a {
 	color: black;
 	margin: 0 3px;
@@ -41,10 +46,10 @@ ul.pagination.pagination-lg.pagination__custom {
 	border-radius: 0;
 }
 
-@media screen and (max-width:599px) {
+/*@media screen and (max-width:599px) {
 	.pagination.pagination-lg.pagination__custom li>a {
 		font-size: 12px;
 		line-height: 1;
 		padding: 10px 10px;
 	}
-}
+}*/
